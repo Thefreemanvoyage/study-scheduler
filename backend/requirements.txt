@@ -1,0 +1,10 @@
+# Version floors (not hard pins) so modern Python versions get prebuilt wheels.
+fastapi>=0.115
+uvicorn[standard]>=0.30
+sqlalchemy>=2.0.30
+psycopg2-binary>=2.9.10   # PostgreSQL driver (deployment). Not needed for SQLite dev.
+pydantic>=2.9
+pydantic-settings>=2.4
+python-jose>=3.3.0        # JWT (HS256 uses the pure-python backend, no cryptography build)
+passlib>=1.7.4            # pbkdf2_sha256 hashing (pure python)
+python-multipart>=0.0.9   # OAuth2 form parsing

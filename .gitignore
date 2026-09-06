@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# SQLite (local dev database)
+*.db
+
+# Node
+node_modules/
+dist/
+.env.local
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
