@@ -5,12 +5,12 @@ FastAPI backend as a Python serverless function under `/api`, backed by a free
 **Neon PostgreSQL** database. One domain, no CORS.
 
 ```
-study-scheduler/
-├── vercel.json          # build + routing config
-├── requirements.txt     # Python deps for the serverless function
-├── api/index.py         # serverless entry (mounts FastAPI under /api)
-├── backend/app/...       # the FastAPI app (imported by api/index.py)
-└── frontend/            # React app (built to frontend/dist)
+study-scheduler/          # repo root = the Vite React app (Vercel auto-detects it)
+├── index.html, src/, public/, package.json, vite.config.js, ...
+├── vercel.json           # routing: /api/* -> serverless function
+├── requirements.txt      # Python deps for the serverless function
+├── api/index.py          # serverless entry (mounts FastAPI under /api)
+└── backend/app/...        # the FastAPI app (imported by api/index.py)
 ```
 
 ## Step 1 — Put the code on GitHub
